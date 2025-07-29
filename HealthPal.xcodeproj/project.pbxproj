@@ -6,8 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BD3D6CED2E39316B00E20113 /* MentalHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D6CEC2E39316B00E20113 /* MentalHealthView.swift */; };
+		BD3D6CEF2E3931A000E20113 /* PhysicalHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D6CEE2E3931A000E20113 /* PhysicalHealthView.swift */; };
+		BD3D6CF12E3931B100E20113 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D6CF02E3931B100E20113 /* NewsView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BD3D6CD62E3930BB00E20113 /* HealthPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3D6CEC2E39316B00E20113 /* MentalHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthView.swift; sourceTree = "<group>"; };
+		BD3D6CEE2E3931A000E20113 /* PhysicalHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalHealthView.swift; sourceTree = "<group>"; };
+		BD3D6CF02E3931B100E20113 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +41,9 @@
 		BD3D6CCD2E3930BB00E20113 = {
 			isa = PBXGroup;
 			children = (
+				BD3D6CF02E3931B100E20113 /* NewsView.swift */,
+				BD3D6CEE2E3931A000E20113 /* PhysicalHealthView.swift */,
+				BD3D6CEC2E39316B00E20113 /* MentalHealthView.swift */,
 				BD3D6CD82E3930BB00E20113 /* HealthPal */,
 				BD3D6CD72E3930BB00E20113 /* Products */,
 			);
@@ -119,6 +131,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD3D6CEF2E3931A000E20113 /* PhysicalHealthView.swift in Sources */,
+				BD3D6CF12E3931B100E20113 /* NewsView.swift in Sources */,
+				BD3D6CED2E39316B00E20113 /* MentalHealthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
