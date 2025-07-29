@@ -25,7 +25,7 @@ struct ContentView: View {
                     .font(.largeTitle)) {
                         Text("News")
                             .foregroundColor(Color.purple)
-               Text("Change 1")
+                        Text("Change 2")
                     }//end nav link
             }
             .padding()
