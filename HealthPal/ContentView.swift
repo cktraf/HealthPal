@@ -10,32 +10,28 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Welcome to Health Pal! What is your name?")
-                    .font(.title2)
-                    .multilineTextAlignment(.center)
-                TextField("Name", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                    .padding(.horizontal)
-                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 0.5)
-                    
-                NavigationLink(destination: MentalHealthView()
-                    .font(.largeTitle)) {
-                        Text("Mental Health")
-                            .foregroundColor(Color.blue)
+            TabView {
+                // First Tab
+                MentalHealthView()
+                    .tabItem {
+                    Image(systemName: "brain.fill")
+                    Text("Mental Log")
                     }
-                    .padding(.top)//end nav link
-                NavigationLink(destination: PhysicalHealthView()
-                    .font(.largeTitle)) {
-                        Text("Physical Health")
-                            .foregroundColor(Color.blue)
-                    }//end nav link
-                NavigationLink(destination: NewsView()
-                    .font(.largeTitle)) {
-                        Text("News")
-                            .foregroundColor(Color.blue)
-                    }//end nav link
-            }
-            .padding()
+
+                // Second Tab
+                PhysicalHealthView()
+                    .tabItem {
+                    Image(systemName: "figure.run")
+                    Text("Physical Log")
+                    }
+
+                // Third Tab
+                NewsView()
+                    .tabItem {
+                    Image(systemName: "newspaper")
+                    Text("Articles")
+                    }
+            }//tab view
         }
     }
 }

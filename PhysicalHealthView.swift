@@ -20,7 +20,7 @@ struct PhysicalHealthView: View {
                 Text("Log Activity:")
                     .font(.title)
                     .multilineTextAlignment(.leading)
-                    .padding(.bottom, 20)
+                    .padding(.bottom, 10)
                 Text("Activity Time (minutes):")
                     .font(.title3)
                 HStack {
@@ -351,7 +351,8 @@ struct PhysicalHealthView: View {
                 .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
                 .foregroundColor(.white)
                 .cornerRadius(15)
-                .padding(.top, 50)
+                .padding(.top, 30)
+                .padding(.bottom, 30)
             }//v stack
         }//z stack
     }//body
