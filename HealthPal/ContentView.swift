@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            VStack {
+            /*VStack {
                 NavigationLink(destination: MentalHealthView()
                     .font(.largeTitle)) {
                         Text("Mental Health")
@@ -27,7 +27,29 @@ struct ContentView: View {
                             .foregroundColor(Color.purple)
                     }//end nav link
             }
-            .padding()
+            .padding()*/
+            TabView {
+                        // First Tab
+                        MentalHealthView()
+                            .tabItem {
+                                Image(systemName: "brain.fill")
+                                Text("Mental Log")
+                            }
+
+                        // Second Tab
+                        PhysicalHealthView()
+                            .tabItem {
+                                Image(systemName: "figure.run")
+                                Text("Physical Log")
+                            }
+
+                        // Third Tab
+                        NewsView()
+                            .tabItem {
+                                Image(systemName: "newspaper")
+                                Text("Articles")
+                            }
+                    }
         }
     }
 }
