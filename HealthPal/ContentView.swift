@@ -16,12 +16,14 @@ struct ContentView: View {
                     .multilineTextAlignment(.center)
                 TextField("Name", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                     .padding(.horizontal)
-                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 0.5)
+                    
                 NavigationLink(destination: MentalHealthView()
                     .font(.largeTitle)) {
                         Text("Mental Health")
                             .foregroundColor(Color.blue)
-                    }//end nav link
+                    }
+                    .padding(.top)//end nav link
                 NavigationLink(destination: PhysicalHealthView()
                     .font(.largeTitle)) {
                         Text("Physical Health")
