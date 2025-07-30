@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MentalHealthView: View {
     var body: some View {
+        
         Text("Welcome!                                      How are you today?")
             .font(.title)
             .fontWeight(.medium)
